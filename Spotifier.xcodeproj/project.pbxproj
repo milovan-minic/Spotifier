@@ -12,6 +12,7 @@
 		E80F5E2B1DE4D87B00777038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E291DE4D87B00777038 /* Main.storyboard */; };
 		E80F5E2D1DE4D87C00777038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E2C1DE4D87C00777038 /* Assets.xcassets */; };
 		E80F5E301DE4D87C00777038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E2E1DE4D87C00777038 /* LaunchScreen.storyboard */; };
+		E80F5E391DE4E00E00777038 /* Spotifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E80F5E2C1DE4D87C00777038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80F5E2F1DE4D87C00777038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80F5E311DE4D87C00777038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80F5E381DE4E00E00777038 /* Spotifier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spotifier.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				E80F5E271DE4D87B00777038 /* ViewController.swift */,
 				E80F5E291DE4D87B00777038 /* Main.storyboard */,
 				E80F5E2C1DE4D87C00777038 /* Assets.xcassets */,
+				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
 				E80F5E2E1DE4D87C00777038 /* LaunchScreen.storyboard */,
 				E80F5E311DE4D87C00777038 /* Info.plist */,
 			);
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80F5E391DE4E00E00777038 /* Spotifier.xcdatamodeld in Sources */,
 				E80F5E281DE4D87B00777038 /* ViewController.swift in Sources */,
 				E80F5E261DE4D87B00777038 /* AppDelegate.swift in Sources */,
 			);
@@ -303,6 +307,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E80F5E381DE4E00E00777038 /* Spotifier.xcdatamodel */,
+			);
+			currentVersion = E80F5E381DE4E00E00777038 /* Spotifier.xcdatamodel */;
+			path = Spotifier.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E80F5E1A1DE4D87B00777038 /* Project object */;
 }
