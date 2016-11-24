@@ -14,13 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var coreDataStack: RTCoreDataStack
-    
+    var coreDataStack: RTCoreDataStack?
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
 
         coreDataStack = RTCoreDataStack() {
             print("Core Data is ready!")
+            
+//            guard let coreDataStack = self.coreDataStack else { return }
         }
         
         return true
