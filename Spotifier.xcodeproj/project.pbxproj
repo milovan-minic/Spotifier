@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81E5C727DB876C80932E2918 /* Pods_Spotifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEDBAE79B918459A98F0BE3 /* Pods_Spotifier.framework */; };
 		E80F5E261DE4D87B00777038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E251DE4D87B00777038 /* AppDelegate.swift */; };
 		E80F5E281DE4D87B00777038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E271DE4D87B00777038 /* ViewController.swift */; };
 		E80F5E2B1DE4D87B00777038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E291DE4D87B00777038 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DEDBAE79B918459A98F0BE3 /* Pods_Spotifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A5DD64DB93B13341375C1C /* Pods-Spotifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifier.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spotifier/Pods-Spotifier.release.xcconfig"; sourceTree = "<group>"; };
+		DF1C8C2424BD6E712EFD4A68 /* Pods-Spotifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spotifier/Pods-Spotifier.debug.xcconfig"; sourceTree = "<group>"; };
 		E80F5E221DE4D87B00777038 /* Spotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80F5E251DE4D87B00777038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E80F5E271DE4D87B00777038 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E5C727DB876C80932E2918 /* Pods_Spotifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E8AC7CACEAFAD40E1BA9A2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DEDBAE79B918459A98F0BE3 /* Pods_Spotifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E532C1A9689E7AC615D0377A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C8C2424BD6E712EFD4A68 /* Pods-Spotifier.debug.xcconfig */,
+				98A5DD64DB93B13341375C1C /* Pods-Spotifier.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E80F5E191DE4D87B00777038 = {
 			isa = PBXGroup;
 			children = (
 				E80F5E241DE4D87B00777038 /* Spotifier */,
 				E80F5E231DE4D87B00777038 /* Products */,
+				E532C1A9689E7AC615D0377A /* Pods */,
+				0E8AC7CACEAFAD40E1BA9A2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E80F5E341DE4D87C00777038 /* Build configuration list for PBXNativeTarget "Spotifier" */;
 			buildPhases = (
+				098773EB4ED4222940797994 /* [CP] Check Pods Manifest.lock */,
 				E80F5E1E1DE4D87B00777038 /* Sources */,
 				E80F5E1F1DE4D87B00777038 /* Frameworks */,
 				E80F5E201DE4D87B00777038 /* Resources */,
+				3BAA282B72FE9DBC46FE3C12 /* [CP] Embed Pods Frameworks */,
+				9859B32871E1575C65C2A7A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		098773EB4ED4222940797994 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BAA282B72FE9DBC46FE3C12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spotifier/Pods-Spotifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9859B32871E1575C65C2A7A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spotifier/Pods-Spotifier-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E80F5E1E1DE4D87B00777038 /* Sources */ = {
@@ -262,6 +337,7 @@
 		};
 		E80F5E351DE4D87C00777038 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1C8C2424BD6E712EFD4A68 /* Pods-Spotifier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Spotifier/Info.plist;
@@ -275,6 +351,7 @@
 		};
 		E80F5E361DE4D87C00777038 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A5DD64DB93B13341375C1C /* Pods-Spotifier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Spotifier/Info.plist;
