@@ -62,6 +62,7 @@
 		E80F5E191DE4D87B00777038 = {
 			isa = PBXGroup;
 			children = (
+				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
 				E80F5E241DE4D87B00777038 /* Spotifier */,
 				E80F5E231DE4D87B00777038 /* Products */,
 				E532C1A9689E7AC615D0377A /* Pods */,
@@ -84,7 +85,6 @@
 				E80F5E271DE4D87B00777038 /* ViewController.swift */,
 				E80F5E291DE4D87B00777038 /* Main.storyboard */,
 				E80F5E2C1DE4D87C00777038 /* Assets.xcassets */,
-				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
 				E80F5E2E1DE4D87C00777038 /* LaunchScreen.storyboard */,
 				E80F5E311DE4D87C00777038 /* Info.plist */,
 			);
@@ -382,6 +382,7 @@
 				E80F5E361DE4D87C00777038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -392,7 +393,8 @@
 				E80F5E381DE4E00E00777038 /* Spotifier.xcdatamodel */,
 			);
 			currentVersion = E80F5E381DE4E00E00777038 /* Spotifier.xcdatamodel */;
-			path = Spotifier.xcdatamodeld;
+			name = Spotifier.xcdatamodeld;
+			path = Spotifier/Spotifier.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

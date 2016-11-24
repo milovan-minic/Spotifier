@@ -7,11 +7,24 @@
 //
 
 import UIKit
+import RTCoreDataStack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var coreDataStack: RTCoreDataStack
+    
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+
+        coreDataStack = RTCoreDataStack() {
+            print("Core Data is ready!")
+        }
+        
+        return true
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
