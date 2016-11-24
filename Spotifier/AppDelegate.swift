@@ -21,7 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coreDataStack = RTCoreDataStack() {
             print("Core Data is ready!")
             
-//            guard let coreDataStack = self.coreDataStack else { return }
+            guard let coreDataStack = self.coreDataStack else { return }
+            
+            guard let nc = self.window?.rootViewController as? UINavigationController else { return }
+            guard let trackController = nc.topViewController as? TrackController else { return }
+            
+            trackController.moc = coreDataStack.mainContext
         }
         
         return true
