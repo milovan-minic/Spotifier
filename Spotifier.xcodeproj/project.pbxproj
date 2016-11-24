@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		81E5C727DB876C80932E2918 /* Pods_Spotifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEDBAE79B918459A98F0BE3 /* Pods_Spotifier.framework */; };
 		E80F5E261DE4D87B00777038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E251DE4D87B00777038 /* AppDelegate.swift */; };
-		E80F5E281DE4D87B00777038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E271DE4D87B00777038 /* ViewController.swift */; };
 		E80F5E2B1DE4D87B00777038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E291DE4D87B00777038 /* Main.storyboard */; };
 		E80F5E2D1DE4D87C00777038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E2C1DE4D87C00777038 /* Assets.xcassets */; };
 		E80F5E301DE4D87C00777038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E2E1DE4D87C00777038 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,8 @@
 		E80F5E431DE7762900777038 /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3D1DE7762900777038 /* Track+CoreDataProperties.swift */; };
 		E80F5E441DE7762900777038 /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */; };
 		E80F5E451DE7762900777038 /* Album+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */; };
+		E80F5E471DE77D9000777038 /* TrackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E461DE77D9000777038 /* TrackController.swift */; };
+		E80F5E491DE77E6B00777038 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E481DE77E6B00777038 /* TrackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,6 @@
 		DF1C8C2424BD6E712EFD4A68 /* Pods-Spotifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotifier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spotifier/Pods-Spotifier.debug.xcconfig"; sourceTree = "<group>"; };
 		E80F5E221DE4D87B00777038 /* Spotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80F5E251DE4D87B00777038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E80F5E271DE4D87B00777038 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E80F5E2A1DE4D87B00777038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E80F5E2C1DE4D87C00777038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80F5E2F1DE4D87C00777038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		E80F5E3D1DE7762900777038 /* Track+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E80F5E461DE77D9000777038 /* TrackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackController.swift; path = ../TrackController.swift; sourceTree = "<group>"; };
+		E80F5E481DE77E6B00777038 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 		E80F5E241DE4D87B00777038 /* Spotifier */ = {
 			isa = PBXGroup;
 			children = (
+				E80F5E461DE77D9000777038 /* TrackController.swift */,
+				E80F5E481DE77E6B00777038 /* TrackCell.swift */,
 				E80F5E251DE4D87B00777038 /* AppDelegate.swift */,
-				E80F5E271DE4D87B00777038 /* ViewController.swift */,
 				E80F5E291DE4D87B00777038 /* Main.storyboard */,
 				E80F5E2C1DE4D87C00777038 /* Assets.xcassets */,
 				E80F5E2E1DE4D87C00777038 /* LaunchScreen.storyboard */,
@@ -236,8 +239,9 @@
 				E80F5E441DE7762900777038 /* Album+CoreDataClass.swift in Sources */,
 				E80F5E431DE7762900777038 /* Track+CoreDataProperties.swift in Sources */,
 				E80F5E391DE4E00E00777038 /* Spotifier.xcdatamodeld in Sources */,
+				E80F5E471DE77D9000777038 /* TrackController.swift in Sources */,
+				E80F5E491DE77E6B00777038 /* TrackCell.swift in Sources */,
 				E80F5E411DE7762900777038 /* Artist+CoreDataProperties.swift in Sources */,
-				E80F5E281DE4D87B00777038 /* ViewController.swift in Sources */,
 				E80F5E451DE7762900777038 /* Album+CoreDataProperties.swift in Sources */,
 				E80F5E261DE4D87B00777038 /* AppDelegate.swift in Sources */,
 				E80F5E421DE7762900777038 /* Track+CoreDataClass.swift in Sources */,
