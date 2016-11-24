@@ -14,6 +14,12 @@
 		E80F5E2D1DE4D87C00777038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E2C1DE4D87C00777038 /* Assets.xcassets */; };
 		E80F5E301DE4D87C00777038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80F5E2E1DE4D87C00777038 /* LaunchScreen.storyboard */; };
 		E80F5E391DE4E00E00777038 /* Spotifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */; };
+		E80F5E401DE7762900777038 /* Artist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3A1DE7762900777038 /* Artist+CoreDataClass.swift */; };
+		E80F5E411DE7762900777038 /* Artist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3B1DE7762900777038 /* Artist+CoreDataProperties.swift */; };
+		E80F5E421DE7762900777038 /* Track+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3C1DE7762900777038 /* Track+CoreDataClass.swift */; };
+		E80F5E431DE7762900777038 /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3D1DE7762900777038 /* Track+CoreDataProperties.swift */; };
+		E80F5E441DE7762900777038 /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */; };
+		E80F5E451DE7762900777038 /* Album+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		E80F5E2F1DE4D87C00777038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80F5E311DE4D87C00777038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80F5E381DE4E00E00777038 /* Spotifier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spotifier.xcdatamodel; sourceTree = "<group>"; };
+		E80F5E3A1DE7762900777038 /* Artist+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Artist+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E80F5E3B1DE7762900777038 /* Artist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Artist+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E80F5E3C1DE7762900777038 /* Track+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E80F5E3D1DE7762900777038 /* Track+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,12 @@
 		E80F5E191DE4D87B00777038 = {
 			isa = PBXGroup;
 			children = (
+				E80F5E3A1DE7762900777038 /* Artist+CoreDataClass.swift */,
+				E80F5E3B1DE7762900777038 /* Artist+CoreDataProperties.swift */,
+				E80F5E3C1DE7762900777038 /* Track+CoreDataClass.swift */,
+				E80F5E3D1DE7762900777038 /* Track+CoreDataProperties.swift */,
+				E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */,
+				E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */,
 				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
 				E80F5E241DE4D87B00777038 /* Spotifier */,
 				E80F5E231DE4D87B00777038 /* Products */,
@@ -214,9 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80F5E401DE7762900777038 /* Artist+CoreDataClass.swift in Sources */,
+				E80F5E441DE7762900777038 /* Album+CoreDataClass.swift in Sources */,
+				E80F5E431DE7762900777038 /* Track+CoreDataProperties.swift in Sources */,
 				E80F5E391DE4E00E00777038 /* Spotifier.xcdatamodeld in Sources */,
+				E80F5E411DE7762900777038 /* Artist+CoreDataProperties.swift in Sources */,
 				E80F5E281DE4D87B00777038 /* ViewController.swift in Sources */,
+				E80F5E451DE7762900777038 /* Album+CoreDataProperties.swift in Sources */,
 				E80F5E261DE4D87B00777038 /* AppDelegate.swift in Sources */,
+				E80F5E421DE7762900777038 /* Track+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
