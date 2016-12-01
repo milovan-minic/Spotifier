@@ -11,5 +11,9 @@ import CoreData
 
 @objc(Track)
 public class Track: NSManagedObject {
+    
+    enum Attributes: String {
+        case name
+    }
 
 }
