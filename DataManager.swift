@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import RTCoreDataStack
 
 final class DataManager {
     
@@ -16,7 +17,11 @@ final class DataManager {
     private init() {}
     // Creating Singleton
     
+    var coreDataStack: RTCoreDataStack?
+    
     func search(for string: String, type: Spotify.SearchType) {
+        
+        guard let coreDataStack = coreDataStack else {return}
         
         let path: Spotify.Path = .search(q: string, type: type)
         Spotify.shared.call(path: path) {
