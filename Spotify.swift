@@ -10,8 +10,10 @@ import Foundation
 
 final class Spotify {
     
-    static let shared = Spotify() // singleton
-    private init() {} // singleton
+    // Beginning of Singleton
+    static let shared = Spotify()
+    private init() {}
+    // Ending of Singleton
     
     static let baseURL: URL = {
         guard let url = URL(string: "https://api.spotify.com/v1/") else { fatalError("Can't create base url!") }
