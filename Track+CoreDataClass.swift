@@ -17,3 +17,15 @@ public class Track: NSManagedObject {
     }
 
 }
+
+extension Track {
+    
+    convenience init?(json: [String: Any], in context: NSManagedObjectContext) {
+        self.init(context: context)
+        
+        self.name = (json["name"] as? String) ?? ""
+        if let discNum = json["disc_number"] as? Int16 {
+            self.discNumber = discNum
+        }
+    }
+}
