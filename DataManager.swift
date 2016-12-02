@@ -11,9 +11,14 @@ import CoreData
 
 final class DataManager {
     
+    // Creating Singleton
+    static let shared = DataManager()
+    private init() {}
+    // Creating Singleton
+    
     func search(for string: String, type: Spotify.SearchType) {
         
-        let path: Spotify.Path = .search(q: "taylor", type: .atist)
+        let path: Spotify.Path = .search(q: string, type: type)
         Spotify.shared.call(path: path) {
             json, error in
             
