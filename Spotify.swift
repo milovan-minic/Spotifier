@@ -91,19 +91,32 @@ extension Spotify {
         let urlRequest = path.urlRequest
         
         let task = URLSession.shared.dataTask(with: urlRequest) {
-            // TODO: Dodaj kod iz Valute koji salje zahtev
+            
+            data, urlResponse, error in
+            
+            // process the returned stuff here
             
             if let error = error {
-                // TODO: Nastaviti
-            }
-            
-            
-            guard lethttpURLResponse = urlResponse as? HTTPURLResponse else {
                 completion(nil, error)
-                // ovim zamentiti ono sto je napisano u Valute
+                return
             }
             
-            // TODO: Nastaviti
+            
+            guard let httpURLResponse = urlResponse as? HTTPURLResponse else {
+                completion(nil, error)
+                return
+            }
+            
+            
+            if httpURLResponse.statusCode != 200 {
+                completion(nil, error)
+                return
+            }
+            
+            guard let data = data else {
+                completion(nil, error)
+                return
+            }
             
             guard
                 let obj = try? JSONSerialization.jsonObject(with: data),
@@ -119,6 +132,33 @@ extension Spotify {
         task.resume()
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
