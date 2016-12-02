@@ -73,14 +73,14 @@ extension Spotify {
         }
         
         private var headerFields: [String: String] {
-            var headers = commonHeaders
+//            var headers = commonHeaders
 //            switch self {
 //            case .albums:
 //                headers["Accept"] = "text/html"
 //            default:
 //                break
 //            }
-            return headers
+//            return headers
         }
         
         private var fullURL: URL {

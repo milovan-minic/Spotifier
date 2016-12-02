@@ -1,5 +1,5 @@
 PODS:
-  - RTCoreDataStack (2.0.3)
+  - RTCoreDataStack (2.0.4)
 
 DEPENDENCIES:
   - RTCoreDataStack (from `https://github.com/radianttap/RTSwiftCoreDataStack.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RTCoreDataStack:
-    :commit: b490f7bf964d7e9b35b95764b9604a032ac905b5
+    :commit: 492ff8334743f4a2f18f77300e060df684987c13
     :git: https://github.com/radianttap/RTSwiftCoreDataStack.git
 
 SPEC CHECKSUMS:
-  RTCoreDataStack: b44c2b775dce25e80bbb4521ba19109b71dd8168
+  RTCoreDataStack: 2cc7165d58b4fcadea361bc62556943a332db689
 
 PODFILE CHECKSUM: bbe16a7ce3c226527c1e4731e7783520831a1329
 
