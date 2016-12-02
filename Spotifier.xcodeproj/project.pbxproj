@@ -22,6 +22,7 @@
 		E80F5E471DE77D9000777038 /* TrackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E461DE77D9000777038 /* TrackController.swift */; };
 		E80F5E491DE77E6B00777038 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E481DE77E6B00777038 /* TrackCell.swift */; };
 		E80F5EE81DEE0CD600777038 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5EE71DEE0CD500777038 /* Spotify.swift */; };
+		E852125E1DF2031D0046AB55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852125D1DF2031D0046AB55 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E80F5E461DE77D9000777038 /* TrackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackController.swift; path = ../TrackController.swift; sourceTree = "<group>"; };
 		E80F5E481DE77E6B00777038 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		E80F5EE71DEE0CD500777038 /* Spotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		E852125D1DF2031D0046AB55 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */,
 				E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */,
 				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
+				E852125D1DF2031D0046AB55 /* DataManager.swift */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E80F5E401DE7762900777038 /* Artist+CoreDataClass.swift in Sources */,
+				E852125E1DF2031D0046AB55 /* DataManager.swift in Sources */,
 				E80F5E441DE7762900777038 /* Album+CoreDataClass.swift in Sources */,
 				E80F5E431DE7762900777038 /* Track+CoreDataProperties.swift in Sources */,
 				E80F5E391DE4E00E00777038 /* Spotifier.xcdatamodeld in Sources */,
