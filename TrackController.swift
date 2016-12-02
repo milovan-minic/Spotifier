@@ -14,9 +14,8 @@ class TrackController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        let arr = try? moc?.fetch(fetchRequest)
         let path: Spotify.Path = .search(q: "taylor", type: .artist)
-        Spotify.shared.call(path) {
+        Spotify.shared.call(path: path) {
             json, error in
             
             // process JSON or errors
