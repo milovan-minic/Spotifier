@@ -38,7 +38,7 @@ final class DataManager {
                 
                 let moc = coreDataStack.importerContext()
                 for item in items {
-                    let t = Track(context: moc)
+                    let t = Track(json: json, in: moc)
                 }
                 try! moc.save()
                 
