@@ -81,6 +81,7 @@ extension Spotify {
 //                break
 //            }
 //            return headers
+            return commonHeaders
         }
         
         private var fullURL: URL {
