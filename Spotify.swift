@@ -100,9 +100,42 @@ extension Spotify {
             return baseURL.appendingPathComponent(path)
         }
         
-        var urlRequest: URLRequest {
+        private var params: [String: String] {
+            var p = [String: String]()
             
-            var r = URLRequest(url: fullURL)
+            switch self  {
+            case .search(let q, let type):
+                p["q"] = q
+                p["type"] = type.rawValue
+            default:
+                break
+            }
+            
+            return p
+        }
+        
+        private func queryEncoded(params: [String: String]) -> String {
+            if params.count == 0 {return ""}
+            
+            var arr = [String]()
+            for (key, value) in params {
+                let s = "\(key)=\(value)"
+                arr.append(s)
+            }
+            
+            return arr.joined(separator: "&")
+        }
+        
+        var urlRequest: URLRequest {
+            // ne radi jer se enkodira i "?" karakter
+//            var r = URLRequest(url: fullURL.appendingPathComponent(queryEncoded(params: params)))
+            
+            guard var components = URLComponents(url: fullURL, resolvingAgainstBaseURL: false) else {fatalError("Invalid URL!")}
+            components.query = queryEncoded(params: params)
+            
+            guard let url = components.url else {fatalError("Invalid URL!")}
+            
+            var r = URLRequest(url: url)
             
             r.httpMethod = method.rawValue
             r.allHTTPHeaderFields = headerFields
