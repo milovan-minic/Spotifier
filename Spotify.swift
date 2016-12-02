@@ -122,7 +122,7 @@ extension Spotify {
             
             guard
                 let obj = try? JSONSerialization.jsonObject(with: data),
-                let jsnon = obj as? JSON
+                let json = obj as? JSON
                 else {
                     completion(nil, nil)
                     return
