@@ -98,9 +98,9 @@
 		E80F5E241DE4D87B00777038 /* Spotifier */ = {
 			isa = PBXGroup;
 			children = (
+				E80F5E251DE4D87B00777038 /* AppDelegate.swift */,
 				E80F5E461DE77D9000777038 /* TrackController.swift */,
 				E80F5E481DE77E6B00777038 /* TrackCell.swift */,
-				E80F5E251DE4D87B00777038 /* AppDelegate.swift */,
 				E80F5E291DE4D87B00777038 /* Main.storyboard */,
 				E80F5E2C1DE4D87C00777038 /* Assets.xcassets */,
 				E80F5E2E1DE4D87C00777038 /* LaunchScreen.storyboard */,

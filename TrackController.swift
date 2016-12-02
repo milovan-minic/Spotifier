@@ -33,7 +33,7 @@ class TrackController: UITableViewController {
         
         let sort0 = NSSortDescriptor(key: "album.name", ascending: true)
         let sort1 = NSSortDescriptor(key: Track.Attributes.name.rawValue, ascending: true)
-        let sort2 = NSSortDescriptor(key: Track.Attributes.name.rawValue, ascending: false)
+        let sort2 = NSSortDescriptor(key: Track.Attributes.name.rawValue, ascending: true)
         
         fetchRequest.sortDescriptors = [sort0, sort1, sort2]
         
@@ -59,7 +59,7 @@ class TrackController: UITableViewController {
 
 extension TrackController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         guard let _ = moc else { return 1 }
         
         guard let sections = frc.sections else { return 1 }
@@ -68,7 +68,7 @@ extension TrackController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+
         guard let _ = moc else { return 0 }
         
         guard let sections = frc.sections else { return 0 }
@@ -80,7 +80,6 @@ extension TrackController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TrackCell.self), for: indexPath)
         
-        // Configure the cell...
         
         let item = frc.object(at: indexPath)
         

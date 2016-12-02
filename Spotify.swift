@@ -14,7 +14,7 @@ final class Spotify {
     private init() {} // singleton
     
     static let baseURL: URL = {
-        guard let url = URL(string: "https://api.spotify.com/v1/") else { fatalError("Can't create base url") }
+        guard let url = URL(string: "https://api.spotify.com/v1/") else { fatalError("Can't create base url!") }
         return url
     }()
     
@@ -37,8 +37,6 @@ extension Spotify {
         
         fileprivate var apiValue: String {
             switch self {
-//            case .albums:
-//                return "albums"
             case .topTracks:
                 return "top-tracks"
             case .relatedArtists:
