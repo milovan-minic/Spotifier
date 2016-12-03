@@ -81,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E80F5EE71DEE0CD500777038 /* Spotify.swift */,
+				E852125D1DF2031D0046AB55 /* DataManager.swift */,
 				E80F5EE61DEE0CA300777038 /* DataModel */,
 				E80F5E241DE4D87B00777038 /* Spotifier */,
 				E80F5E231DE4D87B00777038 /* Products */,
@@ -121,7 +122,6 @@
 				E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */,
 				E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */,
 				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
-				E852125D1DF2031D0046AB55 /* DataManager.swift */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
