@@ -18,8 +18,8 @@ extension Track {
 
     @NSManaged public var name: String
     @NSManaged public var trackId: String
-    @NSManaged public var discNumber: Int16?
-    @NSManaged public var durationMilliseconds: Int64?
+    @NSManaged public var discNumber: Int16
+    @NSManaged public var durationMilliseconds: Int64
     @NSManaged public var album: Album?
 
 }
