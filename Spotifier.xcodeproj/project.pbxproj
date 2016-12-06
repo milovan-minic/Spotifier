@@ -115,13 +115,13 @@
 		E80F5EE61DEE0CA300777038 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
 				E80F5E3A1DE7762900777038 /* Artist+CoreDataClass.swift */,
 				E80F5E3B1DE7762900777038 /* Artist+CoreDataProperties.swift */,
 				E80F5E3C1DE7762900777038 /* Track+CoreDataClass.swift */,
 				E80F5E3D1DE7762900777038 /* Track+CoreDataProperties.swift */,
 				E80F5E3E1DE7762900777038 /* Album+CoreDataClass.swift */,
 				E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */,
-				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
