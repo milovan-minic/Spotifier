@@ -22,6 +22,7 @@ class TrackController: UITableViewController {
         let fetchRequest: NSFetchRequest<Track> = Track.fetchRequest()
         //        fetchRequest.fetchLimit = 10
         
+        //		let predicate = NSPredicate(format: "name like 'house'")
         let predicate = NSPredicate(format: "%K like %@", Track.Attributes.name.rawValue, "house")
         fetchRequest.predicate = predicate
         
