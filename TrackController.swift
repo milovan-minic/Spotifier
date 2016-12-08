@@ -23,7 +23,7 @@ class TrackController: UITableViewController {
         //        fetchRequest.fetchLimit = 10
         
         //		let predicate = NSPredicate(format: "name like 'house'")
-        let predicate = NSPredicate(format: "%K like %@", Track.Attributes.name.rawValue, "house")
+        let predicate = NSPredicate(format: "%K contains[cd] %@", Track.Attributes.name.rawValue, "house")
         fetchRequest.predicate = predicate
         
         let sort0 = NSSortDescriptor(key: "album.name", ascending: true)
