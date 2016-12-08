@@ -54,12 +54,7 @@ final class DataManager {
             default:
                 break
             }
-            
-            // Process JSON or errors
-            
         }
-        
     }
-    
 }
 
