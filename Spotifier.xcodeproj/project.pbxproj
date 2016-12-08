@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E85212811DF749CF0046AB55 /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E85212821DF749CF0046AB55 /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+				E85212851DF74A460046AB55 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		81E5C727DB876C80932E2918 /* Pods_Spotifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEDBAE79B918459A98F0BE3 /* Pods_Spotifier.framework */; };
 		E80F5E261DE4D87B00777038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E251DE4D87B00777038 /* AppDelegate.swift */; };
@@ -163,6 +177,10 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
+					E85212811DF749CF0046AB55 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E80F5E1D1DE4D87B00777038 /* Build configuration list for PBXProject "Spotifier" */;
@@ -179,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				E80F5E211DE4D87B00777038 /* Spotifier */,
+				E85212811DF749CF0046AB55 /* mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +260,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spotifier/Pods-Spotifier-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E85212851DF74A460046AB55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -407,6 +439,20 @@
 			};
 			name = Release;
 		};
+		E85212831DF749CF0046AB55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E85212841DF749CF0046AB55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,6 +473,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E85212821DF749CF0046AB55 /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85212831DF749CF0046AB55 /* Debug */,
+				E85212841DF749CF0046AB55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
