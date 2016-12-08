@@ -88,7 +88,8 @@ extension Spotify {
             var path = ""
 
             switch self {
-            case .search(let q, let type):
+//            case .search(let q, let type):
+            case .search:
                 path  = "search"
             case .artists(let id, let type):
                 let t = type
