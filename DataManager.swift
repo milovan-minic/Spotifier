@@ -10,6 +10,10 @@ import Foundation
 import CoreData
 import RTCoreDataStack
 
+enum DataImportError: Error {
+    case typeMismatch(expected: Any, actual: Any, key: String)
+}
+
 final class DataManager {
     
     // Creating Singleton
