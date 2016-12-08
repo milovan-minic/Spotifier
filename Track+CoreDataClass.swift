@@ -20,20 +20,33 @@ public class Track: NSManagedObject {
 
 extension Track {
     
-    convenience init(json: [String: Any], in context: NSManagedObjectContext) throws {
+    convenience init?(json: [String: Any], in context: NSManagedObjectContext) {
         self.init(context: context)
         
-        guard let trackId = json["id"] as? String else { throw DataImportError.typeMismatch(expected: String.self, actual: type(of: json["id"]), key: "id") }
-        guard let name = json["name"] as? String else { throw DataImportError.typeMismatch(expected: String.self, actual: type(of: json["name"]), key: "name") }
-        
-        self.trackId = trackId
-        self.name = name
-        if let discNum = json["disc_number"] as? Int16 {
-            self.discNumber = discNum
-        }
-        
-        if let durationMilliseconds = json["duration_ms"] as? Int64 {
-            self.durationMilliseconds = durationMilliseconds
+        do {
+            guard let trackId = json["id"] as? String else { throw DataImportError.typeMismatch(expected: String.self, actual: type(of: json["id"]), key: "id") }
+            guard let name = json["name"] as? String else { throw DataImportError.typeMismatch(expected: String.self, actual: type(of: json["name"]), key: "name") }
+            
+            self.trackId = trackId
+            self.name = name
+            
+            if let discNum = json["disc_number"] as? Int16 {
+                self.discNumber = discNum
+            }
+            if let durationMilliseconds = json["duration_ms"] as? Int64 {
+                self.durationMilliseconds = durationMilliseconds
+            }
+            
+        } catch(let error) {
+            switch error {
+            case is DataImportError:
+                print(error)
+            default:
+                print("some other error")
+            }
+            
+            //	if processing fails, then throw it out
+            context.delete(self)
         }
         
     }
