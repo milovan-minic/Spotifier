@@ -28,6 +28,7 @@ final class DataManager {
         guard let coreDataStack = coreDataStack else {return}
         
         let path: Spotify.Path = .search(q: string, type: type)
+        
         Spotify.shared.call(path: path) {
             json, error in
             

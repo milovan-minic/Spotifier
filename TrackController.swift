@@ -28,9 +28,9 @@ class TrackController: UITableViewController {
         
         let sort0 = NSSortDescriptor(key: "album.name", ascending: true)
         let sort1 = NSSortDescriptor(key: Track.Attributes.name.rawValue, ascending: true)
-        let sort2 = NSSortDescriptor(key: Track.Attributes.name.rawValue, ascending: true)
+        //		let sort2 = NSSortDescriptor(key: Track.Attributes.name.rawValue, ascending: true)
         
-        fetchRequest.sortDescriptors = [sort0, sort1, sort2]
+        fetchRequest.sortDescriptors = [sort0, sort1]
         
         let nsfrc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.moc!, sectionNameKeyPath: "album.name", cacheName: nil)
         // TODO napraviti enume i zameniti "album.name" njime
@@ -79,6 +79,7 @@ extension TrackController {
         let item = frc.object(at: indexPath)
         
         cell.textLabel?.text = item.name
+        cell.detailTextLabel?.text = item.album?.name
         
         return cell
     }
