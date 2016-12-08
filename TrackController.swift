@@ -14,7 +14,7 @@ class TrackController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DataManager.shared.search(for: "house", type: .track)
+//        DataManager.shared.search(for: "house", type: .track)
         
     }
     
