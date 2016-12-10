@@ -11,7 +11,7 @@ public override init(entity: NSEntityDescription, insertInto context: NSManagedO
 }
 
 required public init?(managedObjectContext moc: NSManagedObjectContext) {
-    guard let entity = NSEntityDescription.entity(forEntityName: entityName, in: moc) else { return nil }
+    guard let entity = NSEntityDescription.entity(forEntityName: Album.entityName, in: moc) else { return nil }
     super.init(entity: entity, insertInto: moc)
     }
 }
