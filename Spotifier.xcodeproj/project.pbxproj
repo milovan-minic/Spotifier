@@ -37,6 +37,12 @@
 		E80F5E491DE77E6B00777038 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5E481DE77E6B00777038 /* TrackCell.swift */; };
 		E80F5EE81DEE0CD600777038 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F5EE71DEE0CD500777038 /* Spotify.swift */; };
 		E852125E1DF2031D0046AB55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852125D1DF2031D0046AB55 /* DataManager.swift */; };
+		E852129C1DF9E7B10046AB55 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85212951DF9E7B10046AB55 /* Album.swift */; };
+		E852129D1DF9E7B10046AB55 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85212961DF9E7B10046AB55 /* Artist.swift */; };
+		E852129E1DF9E7B10046AB55 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85212971DF9E7B10046AB55 /* Track.swift */; };
+		E852129F1DF9E7B10046AB55 /* _Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85212991DF9E7B10046AB55 /* _Album.swift */; };
+		E85212A01DF9E7B10046AB55 /* _Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852129A1DF9E7B10046AB55 /* _Artist.swift */; };
+		E85212A11DF9E7B10046AB55 /* _Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852129B1DF9E7B10046AB55 /* _Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		E80F5E481DE77E6B00777038 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		E80F5EE71DEE0CD500777038 /* Spotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
 		E852125D1DF2031D0046AB55 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E85212951DF9E7B10046AB55 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		E85212961DF9E7B10046AB55 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		E85212971DF9E7B10046AB55 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		E85212991DF9E7B10046AB55 /* _Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Album.swift; sourceTree = "<group>"; };
+		E852129A1DF9E7B10046AB55 /* _Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Artist.swift; sourceTree = "<group>"; };
+		E852129B1DF9E7B10046AB55 /* _Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		E80F5E191DE4D87B00777038 = {
 			isa = PBXGroup;
 			children = (
+				E85212931DF9E7B10046AB55 /* DataModel */,
 				E80F5EE71DEE0CD500777038 /* Spotify.swift */,
 				E852125D1DF2031D0046AB55 /* DataManager.swift */,
 				E80F5EE61DEE0CA300777038 /* DataModel */,
@@ -129,7 +142,6 @@
 		E80F5EE61DEE0CA300777038 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
 				E80F5E3A1DE7762900777038 /* Artist+CoreDataClass.swift */,
 				E80F5E3B1DE7762900777038 /* Artist+CoreDataProperties.swift */,
 				E80F5E3C1DE7762900777038 /* Track+CoreDataClass.swift */,
@@ -138,6 +150,36 @@
 				E80F5E3F1DE7762900777038 /* Album+CoreDataProperties.swift */,
 			);
 			name = DataModel;
+			sourceTree = "<group>";
+		};
+		E85212931DF9E7B10046AB55 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E80F5E371DE4E00E00777038 /* Spotifier.xcdatamodeld */,
+				E85212941DF9E7B10046AB55 /* mogen-classes */,
+				E85212981DF9E7B10046AB55 /* mogen-properties */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		E85212941DF9E7B10046AB55 /* mogen-classes */ = {
+			isa = PBXGroup;
+			children = (
+				E85212951DF9E7B10046AB55 /* Album.swift */,
+				E85212961DF9E7B10046AB55 /* Artist.swift */,
+				E85212971DF9E7B10046AB55 /* Track.swift */,
+			);
+			path = "mogen-classes";
+			sourceTree = "<group>";
+		};
+		E85212981DF9E7B10046AB55 /* mogen-properties */ = {
+			isa = PBXGroup;
+			children = (
+				E85212991DF9E7B10046AB55 /* _Album.swift */,
+				E852129A1DF9E7B10046AB55 /* _Artist.swift */,
+				E852129B1DF9E7B10046AB55 /* _Track.swift */,
+			);
+			path = "mogen-properties";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "cd DataModel\n/Users/iosakademija/Applications/mogenerator-beta --swift --model ../Spotifier/Spotifier.xcdatamodeld --template-path ../tmpl --human-dir mogen-classes --machine-dir mogen-properties";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -281,15 +323,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E852129C1DF9E7B10046AB55 /* Album.swift in Sources */,
 				E80F5E401DE7762900777038 /* Artist+CoreDataClass.swift in Sources */,
 				E852125E1DF2031D0046AB55 /* DataManager.swift in Sources */,
 				E80F5E441DE7762900777038 /* Album+CoreDataClass.swift in Sources */,
 				E80F5E431DE7762900777038 /* Track+CoreDataProperties.swift in Sources */,
 				E80F5E391DE4E00E00777038 /* Spotifier.xcdatamodeld in Sources */,
+				E85212A01DF9E7B10046AB55 /* _Artist.swift in Sources */,
+				E852129D1DF9E7B10046AB55 /* Artist.swift in Sources */,
+				E852129F1DF9E7B10046AB55 /* _Album.swift in Sources */,
 				E80F5E471DE77D9000777038 /* TrackController.swift in Sources */,
 				E80F5E491DE77E6B00777038 /* TrackCell.swift in Sources */,
+				E85212A11DF9E7B10046AB55 /* _Track.swift in Sources */,
 				E80F5E411DE7762900777038 /* Artist+CoreDataProperties.swift in Sources */,
 				E80F5E451DE7762900777038 /* Album+CoreDataProperties.swift in Sources */,
+				E852129E1DF9E7B10046AB55 /* Track.swift in Sources */,
 				E80F5E261DE4D87B00777038 /* AppDelegate.swift in Sources */,
 				E80F5EE81DEE0CD600777038 /* Spotify.swift in Sources */,
 				E80F5E421DE7762900777038 /* Track+CoreDataClass.swift in Sources */,
@@ -492,7 +540,7 @@
 			);
 			currentVersion = E80F5E381DE4E00E00777038 /* Spotifier.xcdatamodel */;
 			name = Spotifier.xcdatamodeld;
-			path = Spotifier/Spotifier.xcdatamodeld;
+			path = ../Spotifier/Spotifier.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
