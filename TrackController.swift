@@ -26,13 +26,15 @@ class TrackController: UITableViewController {
         let predicate = NSPredicate(format: "%K contains[cd] %@", Track.Attributes.name, "house")
         fetchRequest.predicate = predicate
         
+        let sectionKeyPath = "\(Track.Relationships.album).\(Album.Attributes.name)"
+        
         let sort0 = NSSortDescriptor(key: "album.name", ascending: true)
         let sort1 = NSSortDescriptor(key: Track.Attributes.name, ascending: true)
         //		let sort2 = NSSortDescriptor(key: Track.Attributes.name.rawValue, ascending: true)
         
         fetchRequest.sortDescriptors = [sort0, sort1]
         
-        let nsfrc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.moc!, sectionNameKeyPath: "album.name", cacheName: nil)
+        let nsfrc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.moc!, sectionNameKeyPath: sectionKeyPath, cacheName: nil)
         // TODO napraviti enume i zameniti "album.name" njime
         
         nsfrc.delegate = self
