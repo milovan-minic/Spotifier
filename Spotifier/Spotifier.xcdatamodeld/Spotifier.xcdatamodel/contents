@@ -16,15 +16,21 @@
         <relationship name="albums" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Album" inverseName="artist" inverseEntity="Album" syncable="YES"/>
     </entity>
     <entity name="Track" representedClassName="Track" syncable="YES">
+        <attribute name="csvAvailableMarkets" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="discNumber" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="durationMilliseconds" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isExplicit" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="previewLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spotifyURI" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="trackId" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="album" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Album" inverseName="tracks" inverseEntity="Album" syncable="YES"/>
     </entity>
     <elements>
         <element name="Album" positionX="-2" positionY="-198" width="128" height="88"/>
         <element name="Artist" positionX="-299" positionY="-255" width="128" height="165"/>
-        <element name="Track" positionX="-198" positionY="-28" width="128" height="118"/>
+        <element name="Track" positionX="-198" positionY="-28" width="128" height="210"/>
     </elements>
 </model>
